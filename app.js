@@ -84,3 +84,171 @@ function fetchchicken() {
 
 bakePizza();
 
+
+
+//Date: 2June,2024......Promise and call back
+
+
+
+
+
+// alert("Alas!");
+
+
+// const isFound = false;
+// let i = 0;
+
+// const myArray = [1, 2, 3, 4]
+// while (isFound === false) {
+//     let value = myArray[i];
+//     if (value === 3) {
+//         isFound = true;
+//     }
+//     i++;
+// }
+
+
+// const yourName = prompt("Enter your name");
+
+// while (yourName === "Abdullah") {
+// const yourName = prompt("Enter your name");
+
+// }
+// console.log(yourName);
+
+
+// let yourName;
+// do {
+//     yourName = prompt("Enter your name");
+// }
+// while (yourName !== "Abdullah");
+// console.log(yourName);
+
+
+// function myName(num,cb){
+//     console.log(num, "Run...");
+//     // cb();
+// }
+// function myFoo(){
+//     console.log("Myfoo");
+
+// }
+
+// function Myfoo1(){
+//     console.log("Myfoo1");
+
+// }
+// myName(5, function(){
+//     myFoo()
+// })
+// myName(8, function(){
+//     Myfoo1()
+// })
+
+
+
+// let data="isNotFound";
+// setTimeout(function(){
+//     data="isFound";
+// },3000)
+
+// console.log("data" , data)
+
+
+
+// const result = new Promise(function (resolve, reject) {
+//     const foundDahi = true;
+//     if (foundDahi) {
+//         resolve("Dahi mul gaya");
+//     } else {
+//         reject("Dahi nhi mila");
+//     }
+// });
+
+// console.log(result);
+
+
+
+// const result= new Promise(function(resolve,reject){});
+// console.log(result);
+
+
+// const rewResult = new Promise(function (resolve, reject) {
+
+//     setTimeout(function () {
+//         let dataCalculation = true;
+//         if (dataCalculation) {
+//             resolve("Found");
+//         }
+//         else {
+//             reject("not found");
+//         }
+
+//     }, 2000)
+
+//     console.log("promise");
+// });
+// console.log(rewResult, 1);
+
+
+// rewResult
+//     .then
+
+
+// Syntax.......
+
+// Function Promise(cb){
+//     const resolve = function () { }
+//     const reject = function () { }
+
+//     cb(resolve, reject)
+
+// }
+
+
+
+
+const myResult = new Promise(function (resolve, reject) {
+
+    setTimeout(function () {
+        let newData = false;
+        if (newData) {
+            resolve("Data Found");
+        }
+        else {
+            reject(" Data not found");
+        }
+
+    }, 2000)
+
+});
+
+console.log(myResult);
+
+
+myResult
+
+    .then(function () {
+        console.log("Resolved", 3)
+    })
+
+.catch(function() {
+    console.log("Unsolved", 4)
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
