@@ -232,8 +232,8 @@ myResult
         console.log("Resolved", 3)
     })
 
-.catch(function() {
-    console.log("Unsolved", 4)
+.catch(function(err) {
+    console.log("rejected", err)
 
 });
 
